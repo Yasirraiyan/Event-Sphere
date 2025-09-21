@@ -1,0 +1,109 @@
+EventSphere Project – Basic React Features / List of Features
+
+Component Reusability
+
+EventCard.js, EventForm.js, Navbar.js – একবার তৈরি করে বিভিন্ন জায়গায় ব্যবহার করা যায়।
+
+Props
+
+Parent থেকে child component-এ data পাঠানো।
+
+Example: EventCard receives event and onDelete.
+
+State Management (useState)
+
+Input values (Login, Signup, EventForm).
+
+Event list (EventTest.js)
+
+Loading/Error states during API calls.
+
+Effect Hook (useEffect)
+
+Component mount হওয়ার পর API call।
+
+Data fetch/update/reactive behavior handle।
+
+Conditional Rendering
+
+Loading, Error, Password Match messages।
+
+Navbar links depend on login status (user from localStorage).
+
+ProtectedRoute redirect logic।
+
+Event Handling
+
+onClick, onSubmit for forms, buttons।
+
+e.preventDefault() and e.stopPropagation() usage।
+
+Two-way Binding
+
+Input value ↔ State sync (Login, Signup, EventForm)।
+
+Routing (React Router)
+
+Page navigation: Home, Login, Signup, Dashboard, AdminPanel।
+
+navigate() programmatic navigation।
+
+Routes and Route element usage।
+
+Protected Routes
+
+ProtectedRoute.js handles user/admin access control।
+
+<Navigate to="/login" replace /> redirect।
+
+Context API (optional)
+
+AuthContext.js for global user state।
+
+Login/Signup state share across components।
+
+API Integration
+
+fetchEvents(), createEvent(), deleteEvent()
+
+Async/Await, Try/Catch for error handling।
+
+Handling HTTP Status Codes (200, 201, 204, 403, 404, 500)
+
+Immutability
+
+State update: setEvents([...prev, newEvent])
+
+Filter on delete: setEvents(prev.filter(...))
+
+Feedback Messages
+
+Success/Failure alerts (Event created, deleted)
+
+Password strength indicator (Weak/Medium/Strong)
+
+Password match indicator (green/red text)
+
+LocalStorage
+
+Store user login info.
+
+Conditional rendering based on stored user data.
+
+Form Validation
+
+Required fields, password match, strength check।
+
+Alerts/messages for invalid input।
+
+💡 Summary:
+
+এই প্রজেক্টে React-এর basic core features ব্যবহার করা হয়েছে:
+
+Component, Props, State, Effect, Event Handling
+
+Conditional Rendering, Routing, Protected Routes
+
+Form Handling, API calls, LocalStorage, Alerts
+
+✅ এটা একটি real-life usable mini Event Management
